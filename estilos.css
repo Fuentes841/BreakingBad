@@ -1,0 +1,409 @@
+﻿body{
+    background-color:darkslategray;
+}
+
+* {
+    font-family: Arial;
+}
+
+
+.encabezado {
+    background-color: #002612;
+    border: solid;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+    .encabezado div {
+        border: solid;
+        margin: 25px;
+        padding: 10px;
+        background-image: url(imagenes/banner.png);
+        border-radius: 10px;
+    }
+
+    .encabezado h1 {
+        margin: auto;
+        width: fit-content;
+        color: #d8a60c;
+        text-shadow: 3px 3px 0 #000, -3px 3px 0 #000, -3px -3px 0 #000, 3px -3px 0 #000;
+    }
+
+
+
+
+    /*navegador*/
+
+.navegador * {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Arial;
+
+}
+
+.navegador {
+    height: 60px;
+    padding: 10px;
+    margin: 10px;
+    background-color: #002612;
+    border: solid;
+    border-radius: 10px;
+}
+
+.menu {
+    list-style: none;
+    background-color: #050804;
+    padding: 20px;
+    width: fit-content;
+    height: 100%;
+    margin: auto;
+    border: solid;
+    border-radius: 10px;
+}
+
+    .menu li {
+        position: relative;
+        display: inline-block;
+    }
+
+        .menu li:hover ul {
+            display: block;
+        }
+
+    .menu ul {
+        display: none;
+        position: absolute;
+        left: 0px;
+        top: 20px;
+        background-color: #132f2a;
+        border-radius: 10px;
+        border: solid;
+        border-width: thin;
+        padding:5px;
+    }
+
+        .menu ul li a {
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            color: #6e9297;
+            
+        }
+
+            .menu ul li a:hover {
+                color: antiquewhite;
+                background-color: #808080;
+                border-radius: 10px;
+            }
+
+    .menu li a {
+        text-decoration: none;
+        padding: 10px;
+        color: #6e9297;
+    }
+
+        .menu li a:hover {
+            color: antiquewhite;
+            background-color: #808080;
+            border-radius: 10px;
+        }
+
+.nivel2 li:hover {
+    width: 100%;
+}
+
+.nivel2 li {
+    border: solid;
+    border-width: thin;
+    width: 100%;
+    border-radius: 10px;
+    background-color: #050804;
+    margin-bottom:5px;
+}
+
+
+/*articulo index*/
+
+article {
+    background-image:url(imagenes/brbad2.webp);
+    background-attachment: fixed;
+    background-repeat:no-repeat;
+    background-size:cover;
+
+
+
+}
+
+article section{
+    padding:50px;
+    width:50%;
+    margin:auto;
+    background-color:#000000;
+    color:#6e9297;
+    text-align:justify;
+}
+
+article section p{
+    padding:10px;
+    margin:auto;
+    width:70%;
+    margin-top:10px;
+}
+article section iframe{
+    display:block;
+    width:70%;
+    margin:auto;
+    border:solid;
+    border-radius:10px;
+}
+
+
+
+/*footer*/
+
+footer {
+    display:block;
+    padding:10px;
+    justify-content:center;
+    
+}
+
+
+footer div {
+    display:block;
+    justify-content:center;
+    padding:10px;
+    margin:auto;
+    border:solid;
+    border-color:#000000;
+    border-radius:10px;
+    width:50%;
+    background-color:#002612;
+    
+}
+
+    footer div p {
+        color: #6e9297;
+        margin: auto;
+        width: fit-content;
+        padding: 0;
+    }
+footer div ul{
+    display:flex;
+    flex-wrap:nowrap;
+    justify-content:space-around;
+
+}
+
+footer div ul   {
+    text-decoration:none;
+    list-style:none;
+
+}
+
+    footer div ul li a img {
+     
+        padding: 10px;
+        border-radius:20px;
+    }
+
+
+footer div ul li a:hover img{
+    background-color:darkcyan;
+    padding:10px;
+}
+
+
+
+/*footer / mapa de sitio*/
+
+    footer .mapa * {
+        padding: 0px;  
+        text-decoration: none;
+        list-style: none;
+        margin: 0px;
+        border:none;
+        background-color:#000000;
+    }
+    footer .mapa {
+        margin:10px 0 0 0 ;
+       background-color:#000000;
+       padding:40px;
+    }
+    footer .mapa .menu1 {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+      
+    }
+    footer .mapa .menu1 > li > a{
+      color:#6e9297;
+      font-size:20px;
+      
+    }
+    footer .mapa .menu1 li ul li {
+        padding:10px;
+        color:#2e383b;
+    }
+     footer .mapa .menu1 li ul li a{
+        color:#2e383b;
+    }
+    footer .mapa .menu1 a:hover{
+        color:antiquewhite;
+    }
+
+
+
+
+
+/*personajes*/
+
+#personajes  {
+   
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    align-content:space-around;
+    justify-content:space-around;
+
+    padding:10px;
+}
+
+
+#personajes a img{
+    width:100%;
+    height:100%;
+
+}
+
+#personajes a{
+    width:40%;
+    height:20%;
+    padding:10px;
+    border:solid;
+    border-radius:10px;
+    border-color:#0000; 
+    text-decoration:none;
+
+}
+
+#personajes a:hover{
+    
+    border-color:antiquewhite;
+}
+
+#personajes a p{
+   width:fit-content;
+    justify-content:center;
+    color:antiquewhite;
+  
+}
+
+
+/*walter white*/
+
+
+
+#Walter_White p{
+    display:block;
+    padding: 50px;
+    width: 70%;
+    margin: auto;
+    background-color: #000000;
+    color: #6e9297;
+    justify-content:center;
+    text-align: justify;
+}
+
+#Walter_White  {
+
+    width:50%;
+
+    text-align:center;
+    margin:auto;
+    
+}
+
+#Walter_White  span{
+    font-weight:bold;
+}
+
+    #Walter_White img {
+        display: block;
+        width: fit-content;
+        justify-content:center;
+        margin:auto;
+        padding:10px;
+        border:solid;
+        border-color:antiquewhite;
+        margin-bottom: 50px;
+        border-radius:10px;
+        max-width: 70%;
+        max-height:auto;
+    }
+    #Walter_White h2 {
+        color: #d8a60c;
+        text-shadow: 3px 3px 0 #000, -3px 3px 0 #000, -3px -3px 0 #000, 3px -3px 0 #000;
+    }
+
+   
+/* Galería básica */
+.gallery {
+    display: block;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 50px
+}
+
+.thumbnail {
+    width: 150px;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.thumbnail:hover {
+    transform: scale(1.1);
+}
+
+/* Lightbox */
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.lightbox-img {
+    max-width: 80%;
+    max-height: 80%;
+}
+
+.lightbox .close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.lightbox .close:hover {
+    color: red;
+}
+
+    
+
+
+
+/* mediqeri */
+

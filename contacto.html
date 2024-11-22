@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 
 <html lang="es-ar">
 
@@ -8,8 +8,7 @@
     <title> BreakingBad </title>
     <link rel="stylesheet" type="text/css" href="estilos.css" />
     <link rel="icon" href="imagenes/logo2.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   
+
 </head>
 
 
@@ -27,6 +26,7 @@
             
 
         </header>
+
 
         <nav class="navegador">
             <ul class="menu">
@@ -76,13 +76,17 @@
         
         <section>
 
-            <iframe src="https://www.youtube.com/embed/KQGW1H6lULM?autoplay=1&mute=1" frameborder="0" allowfullscreen width="560" height="315"> </iframe>
-            
-            <p>Breaking Bad es una serie de televisión estadounidense creada y producida por Vince Gilligan. Situada y producida en Albuquerque, Nuevo México, consiste en la historia de Walter White, un profesor de química al que diagnostican un cáncer de pulmón inoperable. Walter pasa a una vida de crimen produciendo y distribuyendo metanfetamina junto a un ex-estudiante, Jesse Pinkman, con el objetivo de conseguir suficiente dinero para el futuro de su familia tras su inevitable muerte. <p />
-            <p>Breaking Bad ha recibido una gran aclamación por parte de la crítica y está considerada como una de las mejores series televisivas de todos los tiempos. Según se emitían sus temporadas los comentarios positivos transmitidos de boca en boca entre espectadores fueron aumentando, lo que condujo a un gran incremento de la popularidad de la serie. A 2013, Breaking Bad es uno de los programas de televisión por cable más vistos en los Estados Unidos: la audiencia de la segunda mitad de la quinta temporada duplicó a la de la primera.            <p />
-            <p>La serie logró obtener tres años consecutivos el premio a la mejor serie por parte de los Premios WGA y ha ganado diez premios Primetime Emmy, incluyendo tres victorias consecutivas para Bryan Cranston en la categoría de mejor actor, dos premios para Aaron Paul al mejor actor de reparto, una victoria de Anna Gunn como mejor actriz de reparto y un premio a la mejor serie dramática después de tres nominaciones. La serie también fue nominada a los premios Globo de Oro como mejor serie dramática y Cranston recibió tres nominaciones a mejor actor, además de cuatro ternas más en los premios del Sindicato de Actores en la misma categoría; en 2013 se alzó con el premio. En ese mismo año, el Gremio de Guionistas de los Estados Unidos nombró a Breaking Bad como la decimotercera serie mejor guionada de todos los tiempos. En septiembre, Breaking Bad entró al Libro Guinness de los récords como la serie mejor puntuada de la historia, con una puntuación de 99 sobre 100 en Metacritic en su quinta temporada y en el IMDb está posicionada actualmente como la mejor serie de la historia.</p>
+        <h2>Contáctanos</h2>
 
+         <form action="enviar_formulario.php" method="post"> 
 
+                 <label for="nombre">Nombre:</label> 
+                 <input type="text" id="nombre" name="nombre" required>
+                 <label for="email">Correo Electrónico:</label>
+                 <input type="email" id="email" name="email" required>
+                 <label for="mensaje">Mensaje:</label>
+                 <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                 <button type="submit">Enviar</button>
 
         </section>
     
@@ -156,7 +160,6 @@
     
     
     </footer>
-   <script src="script.js"></script>
-
+  
 </body>
 </html>

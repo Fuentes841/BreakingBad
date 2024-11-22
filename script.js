@@ -11,3 +11,10 @@ function closeLightbox() {
     lightbox.style.display = 'none';
     lightboxImage.src = '';
 }
+
+
+
+
+
+
+

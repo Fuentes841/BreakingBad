@@ -7,6 +7,9 @@
     <title>BreakingBad</title>
     <link rel="stylesheet" type="text/css" href="estilos.css" />
     <link rel="icon" href="imagenes/logo2.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
 </head>
 <body>
     <header class="encabezado">
@@ -15,7 +18,9 @@
         </div>
         <h1>Breaking Bad - La Serie</h1>
     </header>
-    <nav class="navegador">
+    <button class="menu-toggle">☰</button>
+
+    <nav class="navegador" id="navMenu">
         <ul class="menu">
             <li><a href="index.html">Inicio</a></li>
             <li>
@@ -182,5 +187,27 @@
             </ul>
         </nav>
     </footer>
+<script>
+
+ const lightbox = document.getElementById('lightbox');
+    const lightboxImage = document.getElementById('lightboxImage');
+    
+    function openLightbox(index) {
+        const images = document.querySelectorAll('.thumbnail');
+        lightboxImage.src = images[index].src;
+        lightbox.style.display = 'flex';
+    }
+    
+    function closeLightbox() {
+        lightbox.style.display = 'none';
+        lightboxImage.src = '';
+    }
+    
+
+
+
+</script>
+   
+
 </body>
 </html>

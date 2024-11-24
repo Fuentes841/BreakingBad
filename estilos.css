@@ -194,19 +194,29 @@ footer div ul{
     display:flex;
     flex-wrap:nowrap;
     justify-content:space-around;
+    text-decoration:none;
+    list-style:none;
+    padding:0;
+    
+
 
 }
 
-footer div ul   {
-    text-decoration:none;
-    list-style:none;
+footer div ul  li {
+    width: 10%;
+    height: auto;
+    
 
 }
 
     footer div ul li a img {
-     
+        width: 100%;
         padding: 10px;
         border-radius:20px;
+    }
+
+    footer div ul li a {
+        width: 100%;
     }
 
 
@@ -451,17 +461,289 @@ button[type="submit"]:hover { background-color: #555; }
 
 
 
+/* Estilos para el menú hamburguesa */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: #050401; /* Mantener el color del texto */
+    font-size: 50px;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    border-color: #000000;
+    border-radius: 20px;
+    border:solid;
+    background-color:#d8a60c ;
+}
+
+
+@media (max-width: 576px) {
+    
+
+    
+    body * {
+        width: 100%;
+        box-sizing: border-box;
+    }
 
 
 
+    .menu-toggle {
+        width: 20%;
+        display: block;
+    }
+
+
+    /*navegador*/
+    .menu li:hover ul {
+        display: none;
+    }
+
+
+    .navegador {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        background-color: #002612; 
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        z-index: 1000; 
+        height: fit-content;
+        width: 90%;
+    }
+
+    .navegador ul {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        padding: 0;
+    }
+
+    .navegador ul li {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .navegador ul li a {
+        display: block;
+        padding: 10px;
+        border-bottom: 1px solid #444;
+        color: #6e9297; 
+        background-color: #050804; 
+    }
+
+    .navegador ul li a:hover {
+
+        color: antiquewhite;
+        background-color: #808080;
+        border-radius: 10px;
+    }
+
+    .navegador.active {
+        display: flex;
+    }
+
+
+    .navegador ul li ul{
+        display: none;
+    }
+
+    /*encabezado*/
+       
+       
+    
+    .encabezado div{
+        width: 80%;
+    }
+
+    .encabezado{
+      width: 95%;
+    }
+
+    
+/*articulo*/
 
 
 
+article {
+    background-image:url(imagenes/brbad2.webp);
+    background-attachment: fixed;
+    background-repeat:no-repeat;
+    background-size:cover;
+   border-radius: 10px;
+    width: 100%;
 
 
 
+}
+
+article section{
+    border-radius: 10px;
+    padding:0;
+    width:100%;
+ 
+    background-color:#000000;
+    color:#6e9297;
+    text-align:justify;
+}
+
+article section p{
+   
+   padding: 5%;
+    width:90%;
+    margin: auto;
+   
+}
+article section iframe{
+    padding-top: 10%;
+    display:block;
+    width:90%;
+    margin:auto;
+    border: none;
+   
+}
+
+/*footer*/
+
+footer {
+    display:block;
+    padding:10px;
+    justify-content:center;
+    
+}
+
+
+footer div {
+    display:block;
+    justify-content:center;
+    padding:10px;
+    margin:auto;
+    border:solid;
+    border-color:#000000;
+    border-radius:10px;
+    width:90%;
+    background-color:#002612;
+    
+}
+
+    footer div p {
+        color: #6e9297;
+        margin: auto;
+        width: fit-content;
+        padding: 0;
+    }
+
+footer div ul{
+    display:flex;
+    flex-wrap:nowrap;
+    justify-content:space-around;
+    text-decoration:none;
+    list-style:none;
+    padding:0;
+
+}
+
+footer div ul  li {
+    width: 20%;
+    height: auto;
+}
+
+    footer div ul li a img {
+        width: 100%;
+        padding: 10px;
+        border-radius:20px;
+    }
+
+    footer div ul li a {
+        width: 100%;
+    }
+
+
+footer div ul li a:hover img{
+    background-color:darkcyan;
+    padding:10px;
+}
 
 
 
+/*footer / mapa de sitio*/
+
+    footer .mapa * {
+        padding: 0px;  
+        text-decoration: none;
+        list-style: none;
+        margin: 0px;
+        border:none;
+        background-color:#000000;
+    }
+    footer .mapa {
+        margin:10px 0 0 0 ;
+       background-color:#000000;
+       padding:40px;
+    }
+    footer .mapa .menu1 {
+        display: block;
+      
+    }
+    footer .mapa .menu1 > li > a{
+      color:#6e9297;
+      font-size:20px;
+      
+    }
+    footer .mapa .menu1 li ul li {
+        display:none;
+        padding:10px;
+        color:#2e383b;
+    }
+     footer .mapa .menu1 li ul li a{
+        color:#2e383b;
+    }
+    footer .mapa .menu1 a:hover{
+        color:antiquewhite;
+    }
 
 
+    /*contacto*/
+    form {
+        width: 80%;
+        margin:auto;
+        padding: 10%;
+    }
+    h2{
+        width: 80%;
+        padding: 10%;
+    }
+
+    /*galeria*/
+    
+.gallery img{
+    width:30%;
+    height:30%;
+    padding:5%;
+}
+
+
+/*walter white*/
+
+
+
+#Walter_White p{
+   
+    width: 90%;
+   
+}
+
+#Walter_White  {
+
+    width:100%;
+
+    
+}
+
+
+}

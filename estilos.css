@@ -461,12 +461,12 @@ button[type="submit"]:hover { background-color: #555; }
 
 
 
-/* Estilos para el menú hamburguesa */
+/* menú hamburguesa */
 .menu-toggle {
     display: none;
     background: none;
     border: none;
-    color: #050401; /* Mantener el color del texto */
+    color: #050401; 
     font-size: 50px;
     cursor: pointer;
     position: absolute;
@@ -553,6 +553,8 @@ button[type="submit"]:hover { background-color: #555; }
         display: none;
     }
 
+
+
     /*encabezado*/
        
        
@@ -608,44 +610,19 @@ article section iframe{
    
 }
 
-/*footer*/
-
-footer {
-    display:block;
-    padding:10px;
-    justify-content:center;
-    
+article section h2{
+    padding:10%;
+    margin: auto;
 }
+
+/*footer*/
 
 
 footer div {
-    display:block;
-    justify-content:center;
-    padding:10px;
-    margin:auto;
-    border:solid;
-    border-color:#000000;
-    border-radius:10px;
+
     width:90%;
-    background-color:#002612;
+  
     
-}
-
-    footer div p {
-        color: #6e9297;
-        margin: auto;
-        width: fit-content;
-        padding: 0;
-    }
-
-footer div ul{
-    display:flex;
-    flex-wrap:nowrap;
-    justify-content:space-around;
-    text-decoration:none;
-    list-style:none;
-    padding:0;
-
 }
 
 footer div ul  li {
@@ -653,21 +630,9 @@ footer div ul  li {
     height: auto;
 }
 
-    footer div ul li a img {
-        width: 100%;
-        padding: 10px;
-        border-radius:20px;
-    }
-
-    footer div ul li a {
-        width: 100%;
-    }
+ 
 
 
-footer div ul li a:hover img{
-    background-color:darkcyan;
-    padding:10px;
-}
 
 
 
@@ -675,38 +640,20 @@ footer div ul li a:hover img{
 
     footer .mapa * {
         padding: 0px;  
-        text-decoration: none;
-        list-style: none;
-        margin: 0px;
-        border:none;
-        background-color:#000000;
-    }
-    footer .mapa {
-        margin:10px 0 0 0 ;
-       background-color:#000000;
-       padding:40px;
+     
     }
     footer .mapa .menu1 {
         display: block;
       
     }
-    footer .mapa .menu1 > li > a{
-      color:#6e9297;
-      font-size:20px;
-      
-    }
+  
     footer .mapa .menu1 li ul li {
         display:none;
-        padding:10px;
-        color:#2e383b;
     }
-     footer .mapa .menu1 li ul li a{
-        color:#2e383b;
+    footer .mapa{
+        border-radius: 10px;
     }
-    footer .mapa .menu1 a:hover{
-        color:antiquewhite;
-    }
-
+    
 
     /*contacto*/
     form {
@@ -735,15 +682,20 @@ footer div ul li a:hover img{
 #Walter_White p{
    
     width: 90%;
+    padding: 0;
+    margin: 5%;
    
 }
 
 #Walter_White  {
 
     width:100%;
+    padding-bottom: 5%;
 
     
 }
+
+
 
 
 }
